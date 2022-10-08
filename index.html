@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> calculator app </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="display">
+       <div id="displaytop"></div> 
+       <div id="displaybottom">0</div>
+       </div>
+       <div class="form">
+        <button  id="clear" onclick="clearAll('')">c</button>
+        <button onclick="bracket('()')">()</button>
+        <button class="opera" onclick="signs('%')">%</button>
+        <button   class="opera" onclick="signs('/')">/</button>
+        <button onclick="data(7)">7</button>
+        <button onclick="data(8)">8</button>
+        <button onclick="data(9)">9</button>
+        <button class="opera" onclick="signs('*')">x</button>
+        <button onclick="data(4)">4</button>
+        <button onclick="data(5)">5</button>
+        <button onclick="data(6)">6</button>
+        <button class="opera" onclick="signs('-')">-</button>
+        <button onclick="data(1)">1</button>
+        <button onclick="data(2)">2</button>
+        <button onclick="data(3)">3</button>
+        <button class="opera" onclick="signs('+')">+</button>
+        <button class="del" onclick="del()">del</button>
+        <button onclick="data(0)">0</button>
+        <button class="opera" onclick="signs('.')">.</button>
+        <button id="result" onclick="equalTo()">=</button>
+       </div>
+       
+     <script src="main.js"></script>
+    </body>
+</html>
